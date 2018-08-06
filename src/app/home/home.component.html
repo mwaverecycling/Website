@@ -1,0 +1,67 @@
+<div id="home-container">
+    <div id="home-carousel">
+        <ngb-carousel [interval]="5000" [keyboard]="false">
+            <ng-template ngbSlide>
+                <img src="assets/landfill.jpg" alt="Landfill">
+            </ng-template>
+            <ng-template ngbSlide>
+                <img src="assets/nature.jpg" alt="Recycling">
+            </ng-template>
+        </ngb-carousel>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mwave-title">Our Mission</h3>
+                <hr>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text">
+                    There are millions of tons of plastic, rubber, and other synthetic matter that are being dumped into our landfills each year. MWAVE Recycling's goal is to implement a new process that converts these otherwise waste materials into reusable products and renewable energy.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text">
+                    We are here to demonstrate that companies can be successful and profitable, all the while being environmentally aware. We're not here to be another tax on society, but to help reduce the trash we produce and better the impact we have on our planet, making a brighter future for us all.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="mwave-title">Our Method</h3>
+                <hr>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text">
+                    Through use of an innovative recycling process, we can take material and produce not just a reusable version of it, but spit out entirely new, more useful material than what we started with. Using this procedure, we can handle materials previously seen as unrecyclable and manufacture products like fuel and electricity out of refuse.
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text">
+                    This technique also liberates some materials that were not practical to retrieve in the past, like those bonded to consumer electronics and mixed synthetics. By rescuing these elements, more refined outputs can be produced.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Meet the Team</h4>
+                        <p class="card-text">Take a look at the team looking to make this idea a reality!</p>
+                        <a routerLink="/about" class="card-link">Learn More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Talk to Us</h4>
+                        <p class="card-text">Reach out to us for information, investing, or just to say hi!</p>
+                        <a routerLink="/contact" class="card-link">Learn More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

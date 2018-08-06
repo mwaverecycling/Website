@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@mwave-white:  #F4F0EC;
+@mwave-black:  #3B444B;
+@mwave-blue:   #00a8e0;
+@mwave-green:  #32e54a;
+@mwave-orange: #ff852d;
+
+@mwave-bg: #f6f8fa;
+@mwave-border: #d1d5da;
+
+@navbar-height: 64px;
+
+* {
+    color: @mwave-black;
+    font-family: Raleway, Arial, sans-serif;
+}
+html { position: relative; min-height: 100%; }
+
+#main-nav { height: @navbar-height; }
+#main-container {
+    margin-top: @navbar-height;
+    margin-bottom: @navbar-height * 2;
+}
+
+/* Hot fix for Carousel Animation */
+#home-carousel
+{
+    ngb-carousel {
+        max-width: 1280px;
+        margin: auto;
+
+        .carousel-inner { overflow: visible; }
+
+        .carousel-item {
+            top: 0;
+            display: flex !important;
+            visibility: hidden;
+            opacity: 0;
+
+            position: absolute;
+            &:first-child { position: relative; }
+
+            transition: opacity 1.2s ease-in-out, visibility 1.2s;
+        }
+
+        .carousel-item.active{
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 1.2s ease-in-out, visibility 1.2s;
+        }
+    }
+}
+
+hr { border-color: @mwave-blue; }
+
+.mwave-title { font-family: Poppins, Arial, Sans-Serif; }
+.mwave-title-blue { color: @mwave-blue; }

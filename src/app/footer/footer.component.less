@@ -1,0 +1,35 @@
+@import "../../styles.less";
+
+#footer-wrapper { float: left; }
+#footer-container
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    height: @navbar-height * 1;
+    background-color: @mwave-blue;
+
+    #copyright {
+        height: 100%;
+        text-align: center;
+        line-height: @navbar-height;
+
+        span {
+            color: @mwave-white;
+        }
+    }
+
+    #fred {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        height: @navbar-height;
+        width: @navbar-height;
+    }
+
+    .mwave-fill-orange { fill: @mwave-orange; }
+    .mwave-fill-green { fill: @mwave-green; }
+    .mwave-fill-blue { fill: @mwave-blue; }
+}

@@ -1,0 +1,33 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<style>
+		.mwave-white-fill    { fill:   #F4F0EC; }
+		.mwave-white-stroke  { stroke: #F4F0EC; }
+		.mwave-black-fill    { fill:   #3B444B; }
+		.mwave-black-stroke  { stroke: #3B444B; }
+		
+		.mwave-blue-fill     { fill:   #00a8e0; }
+		.mwave-blue-stroke   { stroke: #00a8e0; }
+		.mwave-green-fill    { fill:   #32e54a; }
+		.mwave-green-stroke  { stroke: #32e54a; }
+		.mwave-orange-fill   { fill:   #ff852d; }
+		.mwave-orange-stroke { stroke: #ff852d; }
+	</style>
+	<path class="mwave-blue-fill" d="
+		M 127,53
+		A 64,64 0 0 0 23,15
+		L 48,19
+		A 48,48 0 0 1 111,72
+		Z"/>
+	<path class="mwave-green-fill" d="
+		M 23,15
+		A 64,64 0 0 0 42,124
+		L 33,101
+		A 48,48 0 0 1 48,19
+		Z"/>
+	<path class="mwave-orange-fill" d="
+		M 42,124
+		A 64,64 0 0 0 127,53
+		L 111,72 
+		A 48,48 0 0 1 33,101
+		Z"/>
+</svg>
